@@ -2,38 +2,43 @@ body{
   background: linear-gradient( rgb(88, 88, 176),pink, white);  
   background-repeat: no-repeat;
   height: 100vh;
- 
+  display: flex;
+  justify-content: center;
 }
 h1{
-  /* box-shadow: 2px 2px 0.5px blue ; */
-  filter: drop-shadow(1px 1px 0.9px blue );
+  filter: drop-shadow(1px 1px 2px blue );
+ text-align: center;
+  margin: 0px;
 }
 .container{
   display: flex;
-  justify-content: center;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-
+  width: 90vw;
+  margin: auto;
 }
+
+.func{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.class{
+  width: 50%;
+}
+
+
+
 .header{
   width: 100vw; 
   position: relative;
   text-align: center;
 }
-.cls{
-position: absolute;
-right: 10%;
-}
-.func{
-  position: absolute;
-  left: 10%;
-}
 button{
    margin: 70px 0;
     border-radius: 30px;
-    height: 70px;
-    width: 300px;
+    min-height: 50px;
+    max-width: 300px;
     padding: 0 20px;
     display: inline-block;
     border: 2px solid black;
@@ -42,12 +47,42 @@ button:hover{
   cursor: pointer;
   background: rgb(9, 96, 96);
 }
+.smallContainer{
+  border: 2px solid black;   
+  border-radius: 10px;
+  background: #10a4df;
+  max-width: 500px;
+  min-height: 250px;
+  height: 100%;
+  font-size: 22px;
+  word-wrap: break-word;
+}
+/* resposiveness */
+@media (max-width:650px) {
+  button{
+    margin: 50px 0;
+     border-radius: 20px;
+     min-height: 50px;
+     max-width: 200px;
+     padding: 0 10px;
+     display: inline-block;
+     border: 1px solid black;
+     font-size: 10px;
+ }
+  .smallContainer{
+    border: 2px solid black;   
+    border-radius: 10px;
+    background: #10a4df;
+    max-width: 300px;
+    font-size: 12px;
+    word-wrap: break-word;
+    min-height:fit-content;
+  }
+}  
+  @media (max-width:300px) {
+    .func{
+      width: 50%;
+      display: inline-block;
+    }
+}
 
-.btn1{
-  margin-right:40px;
-background-color: aqua;
-}
-.btn2{
-  margin-left:40px;
-background-color: rgb(2, 158, 158);
-}

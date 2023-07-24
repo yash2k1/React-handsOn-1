@@ -1,0 +1,24 @@
+/* .funccCompo{
+    width: 50%;
+} */
+.btn1 {
+  background-color: aqua;
+  margin-right: 10%;
+}
+.ext {
+  color: rgb(224, 210, 12);
+}
+.smallContainer1 {
+  margin-right: 10%;
+}
+
+@media (max-width:650px) {
+    /* .btn1{
+        display: inline-block;
+    } */
+    .smallContainer1 {
+        display: block;
+        /* margin-left: 1%; */
+        margin-right: 5%;
+      } 
+}

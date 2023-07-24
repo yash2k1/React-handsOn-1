@@ -1,0 +1,13 @@
+.btn2{
+    background-color: rgb(2, 158, 158);
+    margin-left: 10%;
+
+    }
+    .smallContainer2{
+        margin-left: 10%;
+       }
+       @media (max-width:650px) {
+        .smallContainer2 {
+            margin-left: 5%;
+          } 
+    }
